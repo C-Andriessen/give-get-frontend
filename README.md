@@ -1,3 +1,6 @@
+> **Note:** <br />
+> Dit is een groepsopdracht vanuit school. Ik ben voornamelijk verantwoordelijk voor de front-end van het project en mijn teamgenoot Jouri Roosjen is voornamelijk verantwoordelijk voor de back-end
+
 # Endproject: Give & Get
 
 ## Table of contents:
