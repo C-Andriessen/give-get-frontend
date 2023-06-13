@@ -1,0 +1,107 @@
+@use 'fonts';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-main: 241 30 29; //204 72 57
+
+    --main-background: var(--light-background);
+    --dark-background: 20 25 31;
+    --light-background: 255 255 255;
+
+    --text-primary: var(--light-text-primary);
+    --light-text-primary: 18 31 67;
+    --dark-text-primary: 255 255 255;
+
+    --header-background: var(--light-header-background);
+    --dark-header-background: 20 25 31;
+    --light-header-background: 255 255 255;
+
+    --card-background: var(--light-card-background);
+    --dark-card-background: 27 32 40;
+    --light-card-background: 255 255 255;
+
+    --text-primary: var(--light-text-primary);
+    --light-text-primary: 18 31 67;
+    --dark-text-primary: 255 255 255;
+
+    --text-muted: var(--light-text-muted);
+    --light-text-muted: 108 125 147;
+    --dark-text-muted: 140 163 186;
+
+    // --primary-main: 36 153 239;
+    
+    // --secondary-main: var(--light-secondary-main);
+    // --light-secondary-main: 213 233 253;
+    // --dark-secondary-main: 1 30 61;
+    
+    // --text-primary: var(--light-text-primary);
+    // --light-text-primary: 18 31 67;
+    // --dark-text-primary: 255 255 255;
+    
+    // --text-secondary: var(--light-text-secondary);
+    // --light-text-secondary: 95 116 141;
+    // --dark-text-secondary: 140 163 186;
+    
+    // --text-disabled: var(--light-text-disabled);
+    // --light-text-disabled: 140 163 186;
+    // --dark-text-disabled: 69 90 121;
+    
+    // --border-primary: var(--light-border-primary);
+    // --dark-border-primary: 47 51 54;
+    // --light-border-primary: 238 238 238;
+    
+    // --icon-primary: var(--light-icon-primary);
+    // --dark-icon-primary: 69 90 121;
+    // --light-icon-primary: 140 163 186;
+    
+    // // backgrounds
+    // --main-background: var(--light-background);
+    // --dark-background: 15 15 15;
+    // --light-background: 255 255 255;
+    
+    // --main-header-background: var(--light-header-background);
+    // --dark-header-background: 11 13 13;
+    // --light-header-background: 255 255 255;
+    
+    // --main-nav-background: var(--light-nav-background);
+    // --dark-nav-background: 17 19 19;
+    // --light-nav-background: 241 244 252;
+
+    // --main-search-background: var(--light-search-background);
+    // --dark-search-background: 32 35 39;
+    // --light-search-background: 239 243 244;
+    
+    // --select-background: var(--light-select-background);
+    // --dark-select-background: 30 32 34;
+    // --light-select-background: 238 238 238;
+    
+    // --item-background: var(--light-item-background);
+    // --dark-item-background: 34 34 34;
+    // --light-item-background: 255 255 255;
+    
+    // --card-background: var(--light-card-background);
+    // --dark-card-background: 39 39 39;
+    // --light-card-background: 255 255 255;
+  }
+
+  a,
+  input,
+  button,
+  textarea {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply hover-animation bg-main-background text-text-primary font-inter;
+  }
+}
+
+@layer components {
+  .hover-animation {
+    @apply transition-colors duration-200;
+  }
+}
